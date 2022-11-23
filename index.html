@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kayron Santos">
+    <meta name="description" content="Portfólio do desenvolvedor front-end Kayron Fernando C. Santos">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+    <title>Portfólio | Kayron Santos</title>
+    <link rel="icon" href="./logok.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+    <nav data-menu="suave">
+       <p><a href="#home">&lsaquo;KS/&rsaquo;</a></p>
+       <button data-menu="button" aria-controls="menu"></button>
+     <ul data-menu="list" id="menu">
+      <a href="#home">
+      <li>Início</li>
+     </a>
+       <a href="#sobre">
+         <li>Sobre</li>
+       </a>
+       <a href="#experiencia">
+       <li>Habilidades</li>
+     </a>
+     <a href="#projetos">
+       <li>Projetos</li>
+     </a>
+     </ul>
+   </nav>
+ </header>
+
+    <main>
+      <section class="principal" id="home" >
+        <div class="principal_left">
+          <h1>Oi, eu sou </h1>
+            <span class="principal__sentence"></span>
+            <span class="principal_input-cursor"></span>
+          <h1>Desendolver Front-End</h1>
+          <div class="principal__botao">
+            <a href="https://www.linkedin.com/in/kayron-santos-350406245/" target="_blank">
+              <div class="principal__botao-linkedin">
+                <img src="./assets/linkedin.png" alt="" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/kayronsantos" target="_blank">
+              <div class="principal__botao-github">
+                <img src="./assets/github.png" alt="" />
+                <p>Github</p>
+              </div>
+            </a>
+          </div>
+        </div>  
+        <div class="principal__right">
+          <img src="./assets/code.svg" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt>
+        </div>
+        
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
+      </section>
+      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+        <div class="sobre-mim__foto">
+          <img src="./assets/eu.jpeg" alt="Uma foto de Kayron Santos" />
+        </div>
+        <div class="sobre-mim__descricao" >
+          <h1>Sobre mim</h1>
+          <h2>Fortaleza, Ceará</h2>
+          <p>
+            Olá, me chamo Kayron Santos, sou técnico de informática, e sou apaixonado por tecnologia, atualmente
+            atuo na área do Front-End, mas sempre buscando aprender algo a mais, desde 2021 venho estudando e aplicando
+            meus conhecimentos em diversos projetos. 
+          </p>
+          <div class="sobre-mim__descricao-buttons">
+            <a href="./assets/Kayron Santos Currículo.pdf" download="">
+              <div class="sobre-mim__descricao-buttons-curriculo">
+                <img src="./assets/download-da-nuvem.png" alt="" />
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a
+              href="mailto: kayronsantos.contato@gmail.com?subject=Kayron, vim pelo seu portfólio! :)"
+              target="_blank"
+            >
+              <div class="sobre-mim__descricao-buttons-email">
+                <img src="./assets/email.png" alt="" />
+                <p>E-mail</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+        <h1>Habilidades</h1>
+        <div class="experiencia__wrapper">
+          <section class="experiencia__lugares">
+            <ul data-tab="menu">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </section>
+          <div class="experiencia__descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2>Desenvolvimento Web</h2>
+              <p class="experiencia__descricao-local">Conhecimento amplo nessa área.</p>
+              <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+            </section>
+            <section data-anime="show-right">
+            <h2>CSS</h2>
+            <span></span>
+            <p class="experiencia__descricao-local">Um pouco de design na sua página ;)</p>
+            <p>
+              É um mecanismo para adicionar estilo a um documento web.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>JavaScript</h2>
+            <p class="experiencia__descricao-local">Procurando evoluir cada vez mais nessa área</p>
+            <p>
+              É uma linguagem de programação, juntamente com HTML e CSS, é uma das três principais tecnologias da web.
+            </p>
+          </section>
+        </div>
+        </section>
+        </div>
+      </section>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <h1>Projetos</h1>
+        <div class="projetos__wrapper">
+          <section class="projetos__card">
+            <a href="" target="_blank">
+            <img src="./assets/embreve.jpg" alt="" class="projeto-img"/>
+          </a>
+            <h2>Stafyli</h2>
+            <p>
+              Projeto desenvolvido a partir do curso de Desenvolvimento Web completo do ProgamadorBR, para por em prática meus estudos iniciais de HTML, CSS e JavaScript. 
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript Vanilla.</span>
+            <a href="" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="Imagem de raposa representando meu projeto número 1">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="" target="_blank">
+            <img src="./assets/embreve.jpg" alt="Imagem do filme vingadores representando meu projeto número 2" class="projeto-img"/>
+            </a>
+            <h2>Libras na EEEP</h2>
+            <p>
+              Meu primeiro projeto me aventurando na área de tecnologia, esse elaborado na minha terceira semana de estudos em HTML e CSS (agosto/2021). A partir dele pude evoluir bastante.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="" target="_blank"
+              >
+              <div class="projetos__card-button">
+              <img src="./assets/link.png" alt="">
+              Visualizar
+            </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="" target="_blank">
+            <img src="./assets/embreve.jpg" alt="" class="projeto-img"/>
+            </a>
+            <h2>Gespon</h2>
+            <p>
+              Projeto realizado no meu estágio, aonde pude absorver muita experiência com os meus supervisores e aplicar em um projeto usado pela a empresa.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, ReactJS, JSX.</span>
+            <a href="" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="Imagem logo do pokémon representando meu projeto número 3">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="" target="_blank">
+            <img src="./assets/embreve.jpg" alt="Imagem logo de folhas de uma planta representando meu projeto número 4" class="projeto-img"/>
+          </a>
+            <h2>Gesprov</h2>
+            <p>
+              Projeto realizado também no meu estágio, aonde pude fazer algumas alterações.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, ReactJS, JSX, Styled Components (CSS-in-JS).</span>
+            <a href="" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
+   
+          </section>
+        </div>
+      </section>
+
+      <footer>
+        <p>Desenvolvido por</p><a href="https://www.linkedin.com/in/kayron-santos-350406245/" target="_blank"><span> Kayron Santos</span></a> <br>
+            E-mail para contato: kayronsantos.contato@gmail.com
+            <div class="icons">
+              <div class="links links1">
+                <a href="https://github.com/kayronsantos" target="_blank">
+                  <img
+                    class="transparente"
+                    src="assets/github.png"
+                    alt="github-icon"
+                  />
+                </a>
+              </div>
+              <div class="links links2">
+                <a
+                  href="https://www.linkedin.com/in/kayron-santos-350406245/"
+                  target="_blank"
+                >
+                  <img
+                    class="transparente"
+                    src="assets/linkedin.png"
+                    alt="github-kayron"
+                  />
+                </a>
+              </div>
+              <div class="links links2">
+                <a
+                  href="https://www.instagram.com/kayronsz/"
+                  target="_blank"
+                >
+                  <img
+                    class="transparente"
+                    src="assets/instagram.png"
+                    alt="instagram-kayron"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+      </footer>
+    </main>
+
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
